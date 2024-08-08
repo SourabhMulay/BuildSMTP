@@ -74,6 +74,24 @@ Qurantine: Mark it as spam
 
 Reject: Do not receive the email at all.
 
+<hr>
+
+How that mailserver works? 1.2.3.4????
+
+It's a machine...we run an http server on this machine to create an API's. But we have a SMTP (simple mail transfer protocol) server to create....http is on port 80 and https is on 443. Where the smtp work on port 25 and smtps works on 465 port.
+So the server will either listen to port 25 or 465. Suppose i have created a service and assign 'A' record to 4.5.6.7 IP.
+
+Suppose service named as mail.gmailclone.com...so if you want to consume the service you'll create an emails using this gmailclone domain. and you'll need the mx records to handle the emails on this domain.
+We cam say that the mail.gmailclone.com is the MX record for gmailclone.com
 
 
+To conclude above explanation:
 
+gmailclone.com (domain):
+have MX record: mail.gmailclone.com (MX)[IP: 4.5.6.7]
+
+What ever emails you'll send over gmailclone.com will be handled by mail.gmailclone.com that's all.
+
+SMTP Works over TCP!!!1
+
+We have a node package smtp-server that'll be helpful to create a server.
