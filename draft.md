@@ -1,3 +1,4 @@
+(Look for precised file, this is draft version)
 # BuildSMTP
 <hr>
 Build a Mail server: (Send and Receive the mails):
@@ -96,6 +97,11 @@ SMTP Works over TCP!!!1
 
 We have a node package smtp-server that'll be helpful to create a server.
 
-## CODE NOW!!!!! ...in progress
+## CODE NOW!!!!! 
+
+As the http runs on port 80 and https runs on port 443. Similarly we have to create a smtp server, smtp runs over port 25 and smtps runs on 465. 
+
+So 
+
 
 
