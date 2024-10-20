@@ -1,4 +1,4 @@
-(Look for precised.md file, this is draft version)
+(Look for <a href='https://github.com/SourabhMulay/BuildSMTP/blob/main/morePrecised.md'>precised.md</a> file, this is draft version)
 # BuildSMTP
 <hr>
 Build a Mail server: (Send and Receive the mails):
