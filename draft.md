@@ -101,7 +101,14 @@ We have a node package smtp-server that'll be helpful to create a server.
 
 As the http runs on port 80 and https runs on port 443. Similarly we have to create a smtp server, smtp runs over port 25 and smtps runs on 465. 
 
-So 
+So let say that machine ip is 4.5.6.7 (public ip). So suppose i named my server as gmailClone.com and i can set a A record over it (mail.gmailClone.com A: 4.5.6.7). So (saurabh@gmailClone.com) if you wanted to create the mail then gamilClone.com must have a mx Record.
+
+In Node.js, just like we have the http module to handle HTTP requests, we also have the net package that can be used to build an SMTP server. However, working with the net package directly for SMTP can be quite complex and low-level.
+
+To simplify this process, just like how we use Express to simplify working with HTTP in Node.js, we have the smtp-server package to make handling SMTP much easier.
+
+
+
 
 
 
